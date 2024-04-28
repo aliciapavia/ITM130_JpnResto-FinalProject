@@ -1,0 +1,11 @@
+(1) Change Directory 
+cd "C:\Users\Public\japanese_restaurant\"
+
+(2) 
+set FLASK_APP=app.py
+
+(3) 
+set FLASK_ENV=development
+
+(4)
+flask run

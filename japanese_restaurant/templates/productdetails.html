@@ -1,0 +1,32 @@
+{% include "header.html" %}
+    <h1>Product Details</h1>
+    <table>
+        <tr>
+            <td class="chunky">Code</td>
+            <td class="chunky">{{ code }}
+            </td></tr>
+        
+        <tr>
+            <td class="chunky">Name</td>
+            <td class="chunky">{{ product["name"]}}
+            </td></tr>
+        <tr class="text_box">
+            <td class="chunky">...</td>
+            <td class="chunky">{{ product["desc"]}}
+            </td></tr>
+        
+        <tr>
+            <td class = "chunky">Price</td>
+            <td class = "chunky">{{ product["price"]}}
+
+            </td></tr>
+
+        {% if session["user"] is defined %}
+          <tr><td colspan=2>
+            <a href="/addtocart?code={{ code }}">Add to Cart</a>
+        </td></tr>
+        {% endif %}
+        
+    </table>
+    <a href="/products">Back</a>
+        {% include "footer.html" %}

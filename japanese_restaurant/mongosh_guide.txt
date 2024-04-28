@@ -1,0 +1,45 @@
+(1) use order_managementJpnResto
+(2) show collections
+
+SAMPLE QUERIES
+db.customers.find()
+db.products.find()
+db.customers.find({"first_name":"Joe"})
+db.customers.findOne({"last_name":"Ilagan"})db.riders.findOne({"_id":ObjectId("662e1119b62e686a0446b79c")})
+
+
+Customer IDs
+db.customers
+acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('662e0f3a65cb86db7a46b799'),
+    '1': ObjectId('662e0f3a65cb86db7a46b79a'),
+    '2': ObjectId('662e0f3a65cb86db7a46b79b'),
+    '3': ObjectId('662e0f3a65cb86db7a46b79c')
+  }
+Product IDs
+db.products
+acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('662e0fd265cb86db7a46b79d'),
+    '1': ObjectId('662e0fd265cb86db7a46b79e'),
+    '2': ObjectId('662e0fd265cb86db7a46b79f'),
+    '3': ObjectId('662e0fd265cb86db7a46b7a0'),
+    '4': ObjectId('662e0fd265cb86db7a46b7a1'),
+    '5': ObjectId('662e0fd265cb86db7a46b7a2')
+  }
+Rider IDs
+db.riders
+acknowledged: true,
+ insertedIds: {
+    '0': ObjectId('662e10ccb62e686a0446b799'),
+    '1': ObjectId('662e10ccb62e686a0446b79a'),
+    '2': ObjectId('662e10ccb62e686a0446b79b')
+  }
+Branch IDs
+acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('662e1119b62e686a0446b79c'),
+    '1': ObjectId('662e1119b62e686a0446b79d'),
+    '2': ObjectId('662e1119b62e686a0446b79e')
+  }
